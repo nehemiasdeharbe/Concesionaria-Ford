@@ -1,0 +1,42 @@
+/* CONTACTO */
+@use "../abstracts/variables" as *;
+
+.contacto {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
+  gap: 2rem;
+  padding-bottom: 200px;
+  &-titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $color-azul;
+  }
+
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .cont-form {
+    background-color: $color-background-contacto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  }
+
+  .row {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    &:focus {
+      border-color: $color-azul;
+      box-shadow: 0 0 0 0.2rem rgba(11, 42, 91, 0.25);
+    }
+  }
+}

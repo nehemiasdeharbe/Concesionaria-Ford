@@ -1,101 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford Concesionaria - Usados</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../style/styles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-</head>
-<body class="body-usados">
-    <!-- encabezado principal con barra de navegacion -->
-     <header>
-        <div class="logo"> 
-            <h1 class="nombre">Ford Concesionaria Oficial Argentina</h1>
-            <a href="../index.html" class="logo-img">
-                <img class="img" src="../assets/logo-ford.webp" alt="logo de ford">
-            </a>
-        </div>
-        <div class="navegacion">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-btn">MENU</label>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="vehiculos.html">Vehiculos</a></li>
-                <li><a href="usados.html">Usados</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="quienes-somos.html">¿Quienes Somos?</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-
-    <main class="main-usados">
-        <section class="usados">
-            <div class="titulo-usados">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light">
+        <title>Ford Concesionaria - Usados</title>
+        <meta name="description" content="Vehículos usados seleccionados en excelente estado, con garantía y precios accesibles. Toyota, Peugeot, Ford, Volkswagen y más en tu concesionaria Ford Argentina.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style/styles.css">
+    </head>
+    <body class="body-usados">
+        <header>
+            <div class="logo">
+                <h1 class="nombre">Ford Concesionaria Oficial Argentina</h1>
+                <a href="../index.html" class="logo-img">
+                    <img class="img" src="../assets/logo-ford.webp" alt="Logo de Ford">
+                </a>
+            </div>
+            <div class="navegacion">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">MENU</label>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="vehiculos.html">Vehículos</a></li>
+                        <li><a href="usados.html">Usados</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-usados">
+            <section class="usados">
+                <div class="titulo-usados">
                 <h2>Vehículos Usados</h2>
-                <p>Usados seleccionados en excelente estado, con garantía y a precios accesibles
-                </p>
-            </div>
-            <div class="lista-usados">
-                <article class="art-usado">
-                    <img src="../assets/corolla-logo.webp" alt="imagen de auto toyota corolla" title="toyota corolla">
-                    <h3>Toyota Corolla 2.0 SEG CVT</h3>
-                    <p>$38.100.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-
-                <article class="art-usado">
-                    <img src="../assets/peugeot-208-logo.webp" alt="imagen de auto peugeot 208" title="peugeot 208">
-                    <h3>Peugeot 208 GT 5PTAS</h3>
-                    <p>$32.500.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-
-                <article class="art-usado">
-                    <img src="../assets/ranger-usada-logo.webp" alt="imagen de una camioneta ford ranger" title="ford ranger">
-                    <h3>Ford Ranger DC 3.0 V6 LTD 4X4 AT</h3>
-                    <p>$66.000.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-
-                <article class="art-usado">
-                    <img src="../assets/taos-logo.webp" alt="imagen de una suv's volkswagen taos" title="volkswagen taos">
-                    <h3>Volkswagen Taos 250 TSI BIT HIGHLINE AT</h3>
-                    <p>$49.500.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-
-                <article class="art-usado">
-                    <img src="../assets/fiat-cronos-logo.webp" alt="imagen de un auto fiat cronos" title="iat cronos">
-                    <h3>Fiat Cronos 1.3 PRECISION CVT</h3>
-                    <p>$29.900.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-
-                <article class="art-usado">
-                    <img src="../assets/kia-logo-webp.jpg" alt="imagen de auto kia rio" title="kia rio">
-                    <h3>Kia Rio 1.6 SX AT</h3>
-                    <p>$32.500.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-                
-                <article class="art-usado">
-                    <img src="../assets/jac-logo.webp" alt="imagen de una camioneta jac s luxury" title="jac s luxury">
-                    <h3>Jac S s4 1.5 Luxury CVT</h3>
-                    <p>$35.000.000</p>
-                    <a class="btn-cta" href="contacto.html">Conocer mas</a>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer>
-    <p>Contacto: fordconcesionaria@gmail.com<br><p>© 2025 Mi Sitio Web</p></p>
-    </footer>
-</body>
+                <p>Usados seleccionados en excelente estado, con garantía y a precios accesibles.</p>
+                </div>
+                <div class="lista-usados">
+                    <article class="art-usado">
+                        <img src="../assets/corolla-logo.webp" alt="Auto Toyota Corolla color blanco" title="Toyota Corolla">
+                        <h3>Toyota Corolla 2.0 SEG CVT</h3>
+                        <p>$38.100.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/peugeot-208-logo.webp" alt="Auto Peugeot 208 color gris" title="Peugeot 208">
+                        <h3>Peugeot 208 GT 5PTAS</h3>
+                        <p>$32.500.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/ranger-usada-logo.webp" alt="Camioneta Ford Ranger color roja" title="Ford Ranger">
+                        <h3>Ford Ranger DC 3.0 V6 LTD 4X4 AT</h3>
+                        <p>$66.000.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/taos-logo.webp" alt="Camioneta suv Volkswagen Taos color blanca" title="Volkswagen Taos">
+                        <h3>Volkswagen Taos 250 TSI BIT HIGHLINE AT</h3>
+                        <p>$49.500.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/fiat-cronos-logo.webp" alt="Auto Fiat Cronos color blanco" title="Fiat Cronos">
+                        <h3>Fiat Cronos 1.3 PRECISION CVT</h3>
+                        <p>$29.900.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/kia-logo-webp.jpg" alt="Auto Kia Rio color blanco " title="Kia Rio">
+                        <h3>Kia Rio 1.6 SX AT</h3>
+                        <p>$32.500.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                    <article class="art-usado">
+                        <img src="../assets/jac-logo.webp" alt="Camioneta suv JAC S4 Luxury color roja" title="JAC S4 Luxury">
+                        <h3>JAC S4 1.5 Luxury CVT</h3>
+                        <p>$35.000.000</p>
+                        <a class="btn-cta" href="contacto.html">Conocer más</a>
+                    </article>
+                </div>
+            </sectio>
+        </main>
+        <footer>
+            <p>Contacto: fordconcesionaria@gmail.com<br>© 2026 Mi Sitio Web</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

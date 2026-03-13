@@ -1,0 +1,36 @@
+/* INICIO */
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.inicio {
+    background-image: url("../assets/ranger-logo-principal.webp");
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 5vw;
+    width: 100%;
+    max-width: 100%;
+
+    .contenido-inicio {
+        color: $color-texto-inicio;
+        padding-top: 7rem;
+
+            h2 {
+                font-family: $font-main;
+                margin-top: 2.7rem;
+                font-size: clamp(2.52rem, 4.5vw, 3.15rem);
+                font-weight: 600;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                max-width: 700px;
+                text-shadow: $shadow-text;
+            }
+
+            p {
+                font-size: 1.53rem;
+                line-height: 1.44;
+                font-weight: 500;
+                color: $color-texto;
+                text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+            }
+    } 
+}

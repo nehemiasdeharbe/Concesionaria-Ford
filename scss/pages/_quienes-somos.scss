@@ -1,0 +1,61 @@
+/* QUIENES SOMOS */
+@use "../abstracts/variables" as *;
+
+.q-n {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+    padding-bottom: 120px;
+  }
+
+  .section-quienes-somos {
+    padding: 20px 40px 60px 40px;
+  }
+
+  .titulo-q-n {
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  .quienes-somos {
+    padding: 50px 20px;
+    border-radius: 12px;
+    background-color: $qs-background-color;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    font-family: sans-serif;
+  }
+
+  .qs-texto {
+    width: 45%;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .qs-linea {
+    width: 4px;
+    background-color: $color-azul;
+    border-radius: 2px;
+  }
+
+  .qs-imagen {
+    width: 45%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+}

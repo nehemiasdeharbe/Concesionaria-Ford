@@ -1,0 +1,81 @@
+/* USADOS */
+@use "../abstracts/variables" as *;
+.usados{
+  padding-bottom: 250px;
+    .titulo-usados {
+      text-align: center;
+      margin-top: 4rem;
+      margin-bottom: 2.5rem;
+      padding: 0 5vw;
+      font-family: $font-main;
+
+      h2 {
+        font-size: clamp(2.2rem, 4vw, 3rem);
+        font-weight: 650;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+        color: $titulos-usados-okm;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      p {
+        font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+        font-weight: 500;
+        line-height: 1.6;
+        max-width: 680px;
+        margin: 0 auto;
+        color: $color-parrafo-autos;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        margin: 1.2rem auto 1.5rem;
+        background: linear-gradient(90deg, #4da3ff, #003b7a);
+        border-radius: 4px;
+      }
+    }
+
+    .lista-usados {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+      gap: 3rem;
+      max-width: 1450px;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 2rem 5vw;
+    }
+
+    .art-usado {
+      flex: 1 1 300px;
+      text-align: center;
+      font-family: sans-serif;
+
+      img {
+        width: auto;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      h3 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+}

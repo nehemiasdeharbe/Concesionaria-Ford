@@ -20,7 +20,7 @@ main, section {
 /*FOOTER*/
 footer {
   background-color: #0b2a5b;
-  color: rgba(255, 255, 255, 0.85);
+  color: white;
   text-align: center;
   font-size: 10px;
   padding: 6px 0;
@@ -31,7 +31,7 @@ footer p {
   line-height: 1.4;
 }
 
-/* HEADER */
+/*HEADER*/
 header {
   background-color: #0b2a5b;
   color: aliceblue;
@@ -52,13 +52,11 @@ header .logo img {
   height: auto;
 }
 header .nombre {
-  margin-top: 4px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
+  font-size: 36px;
   font-weight: 700;
   margin-left: -20px;
   line-height: 1;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 header .navegacion {
   display: flex;
@@ -91,98 +89,8 @@ header .navegacion a:hover {
 }
 
 /* COMPONENTS */
-.btn-cta {
-  border-radius: 6px;
-  background-color: #002a57;
-  color: white;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10px;
-  padding: 8px 14px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
-}
-.btn-cta:hover {
-  background-color: #003b7a;
-}
-.btn-cta:active {
-  transform: scale(0.95);
-  background-color: #002a57;
-}
-
-.btn-principal {
-  display: inline-block;
-  padding: 14px 34px;
-  margin-top: 24px;
-  background: linear-gradient(135deg, #003b7a, #002a57);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 40px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.25s ease;
-}
-.btn-principal:hover {
-  transform: translateY(-3px);
-}
-.btn-principal:active {
-  transform: translateY(1px) scale(0.96);
-}
-.btn-principal::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-  transition: 0.5s;
-}
-.btn-principal:hover::after {
-  left: 100%;
-}
-
-.btn-vehiculo {
-  background-color: #003b7a;
-  color: white;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 6px;
-  display: inline-block;
-  transition: transform 0.1s ease;
-}
-.btn-vehiculo:hover {
-  background-color: #002a57;
-}
-.btn-vehiculo:active {
-  transform: scale(0.95);
-  background-color: #003b7a;
-}
-
-.btn-primary {
-  margin-top: 1rem;
-  background-color: #0b2a5b;
-  border: none;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-.btn-primary:hover {
-  background-color: #082046;
-}
-.btn-primary:active {
-  background-color: #0b2a5b;
-  transform: scale(0.95);
-}
-
 /* PAGES */
-/* CONTACTO */
+/*CONTACTO*/
 .contacto {
   min-height: 80vh;
   display: flex;
@@ -191,7 +99,6 @@ header .navegacion a:hover {
   justify-content: flex-start;
   padding: 4rem 1rem;
   gap: 2rem;
-  padding-bottom: 200px;
 }
 .contacto-titulo {
   text-align: center;
@@ -212,33 +119,62 @@ header .navegacion a:hover {
 .contacto .row {
   margin-bottom: 1rem;
 }
+.contacto .btn-primary {
+  margin-top: 1rem;
+  background-color: #0b2a5b;
+  border: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.contacto .btn-primary:hover {
+  background-color: #082046;
+}
+.contacto .btn-primary:active {
+  background-color: #0b2a5b;
+  transform: scale(0.95);
+}
 .contacto .form-control:focus {
   border-color: #0b2a5b;
   box-shadow: 0 0 0 0.2rem rgba(11, 42, 91, 0.25);
 }
+.contacto .form-control:required {
+  border-left: 4px solid orange;
+}
+.contacto .form-control:invalid {
+  border-left: 4px solid #0b2a5b;
+}
+.contacto .form-control:valid {
+  border-left: 4px solid green;
+}
+.contacto textarea:required {
+  border-left: 4px solid orange;
+}
+.contacto textarea:invalid {
+  border-left: 4px solid #0b2a5b;
+}
+.contacto textarea:valid {
+  border-left: 4px solid green;
+}
 
-/* INICIO */
+/*INICIO*/
 .inicio {
   background-image: url("../assets/ranger-logo-principal.webp");
   background-size: cover;
   min-height: 100vh;
   padding: 0 5vw;
-  width: 100%;
-  max-width: 100%;
 }
 .inicio .contenido-inicio {
   color: white;
   padding-top: 7rem;
 }
 .inicio .contenido-inicio h2 {
-  font-family: "Montserrat", sans-serif;
   margin-top: 2.7rem;
   font-size: clamp(2.52rem, 4.5vw, 3.15rem);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.02em;
   max-width: 700px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 .inicio .contenido-inicio p {
   font-size: 1.53rem;
@@ -247,8 +183,47 @@ header .navegacion a:hover {
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
+.inicio .contenido-inicio .btn-principal {
+  display: inline-block;
+  padding: 14px 34px;
+  margin-top: 24px;
+  background: linear-gradient(135deg, #003b7a, #002a57);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.inicio .contenido-inicio .btn-principal:hover {
+  transform: translateY(-3px);
+}
+.inicio .contenido-inicio .btn-principal:active {
+  transform: translateY(1px) scale(0.96);
+}
+.inicio .contenido-inicio .btn-principal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: 0.5s;
+}
+.inicio .contenido-inicio .btn-principal:hover::after {
+  left: 100%;
+}
 
-/* QUIENES SOMOS */
+.inicio {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*quienes somos*/
 .q-n {
   min-height: 100vh;
   display: flex;
@@ -259,7 +234,7 @@ header .navegacion a:hover {
   padding-bottom: 120px;
 }
 .q-n .section-quienes-somos {
-  padding: 20px 40px 60px 40px;
+  padding: 20px 40px 60PX 40PX;
 }
 .q-n .titulo-q-n h2 {
   text-align: center;
@@ -298,18 +273,15 @@ header .navegacion a:hover {
   border-radius: 12px;
 }
 
-/* USADOS */
-.usados {
-  padding-bottom: 250px;
-}
-.usados .titulo-usados {
+/*USADOS*/
+.titulo-usados {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
   padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
 }
-.usados .titulo-usados h2 {
+.titulo-usados h2 {
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 650;
   line-height: 1.15;
@@ -318,7 +290,7 @@ header .navegacion a:hover {
   color: #0b1c2d;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-.usados .titulo-usados p {
+.titulo-usados p {
   font-size: clamp(1.05rem, 1.6vw, 1.35rem);
   font-weight: 500;
   line-height: 1.6;
@@ -327,7 +299,7 @@ header .navegacion a:hover {
   color: #4a5a6a;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
-.usados .titulo-usados::after {
+.titulo-usados::after {
   content: "";
   display: block;
   width: 60px;
@@ -336,52 +308,51 @@ header .navegacion a:hover {
   background: linear-gradient(90deg, #4da3ff, #003b7a);
   border-radius: 4px;
 }
-.usados .lista-usados {
+
+.lista-usados {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(3, minmax(300px, 400px));
   gap: 3rem;
   max-width: 1450px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: start;
   padding: 2rem 5vw;
 }
-.usados .art-usado {
+
+.art-usado {
   flex: 1 1 300px;
   text-align: center;
   font-family: sans-serif;
 }
-.usados .art-usado img {
+.art-usado img {
   width: auto;
   height: auto;
   border-radius: 12px;
   margin-bottom: 10px;
   transition: transform 0.5s ease;
 }
-.usados .art-usado:hover img {
+.art-usado:hover img {
   transform: scale(1.1);
 }
-.usados .art-usado h3 {
+.art-usado h3 {
   margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.usados .art-usado p {
+.art-usado p {
   font-size: 1rem;
 }
 
-/* VEHICULOS */
-.vehiculos {
-  padding-bottom: 200px;
-}
-.vehiculos .titulo-okm {
+/*VEHICULOS */
+.titulo-okm {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
   padding: 0 5vw;
   font-family: "Montserrat", sans-serif;
 }
-.vehiculos .titulo-okm h2 {
+.titulo-okm h2 {
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 650;
   line-height: 1.15;
@@ -390,7 +361,7 @@ header .navegacion a:hover {
   color: #0b1c2d;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-.vehiculos .titulo-okm p {
+.titulo-okm p {
   font-size: clamp(1.05rem, 1.6vw, 1.35rem);
   font-weight: 500;
   line-height: 1.6;
@@ -399,7 +370,7 @@ header .navegacion a:hover {
   color: #4a5a6a;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
-.vehiculos .titulo-okm::after {
+.titulo-okm::after {
   content: "";
   display: block;
   width: 60px;
@@ -408,56 +379,70 @@ header .navegacion a:hover {
   background: linear-gradient(90deg, #4da3ff, #003b7a);
   border-radius: 4px;
 }
-.vehiculos .nav-vehiculos ul {
+
+.nav-vehiculos ul {
   display: flex;
   gap: 15px;
   justify-content: center;
   margin-top: 24px;
   list-style: none;
-  padding: 0;
 }
-.vehiculos .nav-vehiculos ul li a {
+.nav-vehiculos ul li a {
   text-decoration: none;
   text-align: center;
 }
-.vehiculos .titulo-p-up,
-.vehiculos .titulo-autos,
-.vehiculos .titulo-suvs {
+
+.btn-vehiculo {
+  background-color: #003b7a;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+.btn-vehiculo:hover {
+  background-color: #002a57;
+}
+.btn-vehiculo:active {
+  transform: scale(0.95);
+  background-color: #003b7a;
+}
+
+.titulo-p-up,
+.titulo-autos,
+.titulo-suvs {
   text-align: center;
   font-size: 2rem;
   margin-top: 60px;
   font-weight: 600;
 }
-.vehiculos {
-  /* LISTA VEHICULOS */
-}
-.vehiculos .lista-articulos {
+
+/*VEHICULOS*/
+.lista-articulos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(3, minmax(300px, 400px));
   gap: 3rem;
   max-width: 1450px;
-  margin: 0 auto 100px;
-  justify-content: center;
+  margin: 0 auto;
+  justify-content: start;
   padding: 2rem 5vw;
+  margin-bottom: 100px;
 }
-.vehiculos .articulos-0km .carousel-indicators {
-  justify-content: flex-start !important;
-  margin-left: 0 !important;
-  padding-left: 0;
-}
-.vehiculos .articulos-0km {
+
+.articulos-0km {
   text-align: center;
 }
-.vehiculos .articulos-0km h4 {
+.articulos-0km h4 {
   margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.vehiculos .articulos-0km .carousel-item {
+.articulos-0km .carousel-item {
   height: 250px;
 }
-.vehiculos .articulos-0km img {
+.articulos-0km img {
   margin-top: 20px;
   width: 100%;
   height: 100%;
@@ -465,14 +450,31 @@ header .navegacion a:hover {
   border-radius: 10px;
   transition: transform 0.5s ease;
 }
-.vehiculos .articulos-0km:hover img {
+.articulos-0km:hover img {
   transform: scale(1.1);
 }
 
+.btn-cta {
+  border-radius: 6px;
+  background-color: #002a57;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 6px 10px;
+}
+.btn-cta:hover {
+  background-color: #003b7a;
+}
+.btn-cta:active {
+  transform: scale(0.95);
+  background-color: #002a57;
+}
+
 /*RESPONSIVE*/
-/* MOBILE */
 @media (max-width: 600px) {
-  /* HEADER */
+  /*HEADER*/
   #menu-toggle,
   .menu-btn {
     display: block;
@@ -549,7 +551,7 @@ header .navegacion a:hover {
   #menu-toggle:checked ~ nav {
     max-height: 500px;
   }
-  /* INICIO */
+  /*INICIO*/
   .inicio {
     min-height: calc(100vh - 260px);
     background-position: center;
@@ -588,11 +590,11 @@ header .navegacion a:hover {
     font-size: 0.95rem;
     letter-spacing: 1px;
   }
-  /* VEHICULOS */
+  /*VEHICULOS*/
   .lista-articulos {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
   .articulos-0km {
     background: #ffffff;
@@ -625,9 +627,8 @@ header .navegacion a:hover {
     font-size: 1rem;
     border-radius: 30px;
   }
-  /* USADOS */
+  /*USADOS*/
   .lista-usados {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 20px;
@@ -659,7 +660,7 @@ header .navegacion a:hover {
     font-size: 0.95rem;
     border-radius: 30px;
   }
-  /* QUIENES SOMOS */
+  /*QUIENES SOMOS*/
   .section-quienes-somos {
     padding: 3rem 20px;
   }
@@ -693,7 +694,7 @@ header .navegacion a:hover {
     width: 100%;
     max-width: 350px;
   }
-  /* FOOTER */
+  /*FOOTER*/
   footer {
     padding: 16px 18px;
     background: #0b2a5b;
@@ -706,9 +707,8 @@ header .navegacion a:hover {
     margin: 0;
   }
 }
-/* TABLET */
 @media (min-width: 601px) and (max-width: 1024px) {
-  /* HEADER */
+  /*HEADER*/
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -780,7 +780,7 @@ header .navegacion a:hover {
   #menu-toggle:checked ~ nav {
     max-height: 400px;
   }
-  /* INICIO */
+  /*INICIO*/
   .inicio {
     min-height: calc(100vh - 140px);
     background-image: url("../assets/ranger-logo-principal.webp");
@@ -813,7 +813,7 @@ header .navegacion a:hover {
     font-size: 0.95rem;
     border-radius: 40px;
   }
-  /* 0KM */
+  /*0KM*/
   .titulo-okm h2 {
     font-size: 2rem;
   }
@@ -823,7 +823,7 @@ header .navegacion a:hover {
   }
   .lista-articulos {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     padding: 2rem 6vw;
   }
   .articulos-0km {
@@ -858,7 +858,7 @@ header .navegacion a:hover {
     border-radius: 30px;
     display: block;
   }
-  /* USADOS */
+  /*USADOS*/
   .titulo-usados h2 {
     font-size: 2rem;
   }
@@ -867,7 +867,6 @@ header .navegacion a:hover {
     max-width: 600px;
   }
   .lista-usados {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     padding: 2rem 6vw;
@@ -903,10 +902,9 @@ header .navegacion a:hover {
     border-radius: 30px;
     display: block;
   }
-  /* CONTACTO */
+  /*CONTACTO*/
   .contacto {
     padding: 4rem 5vw;
-    min-height: 100vh;
   }
   .contacto-titulo {
     font-size: 2rem;
@@ -923,7 +921,7 @@ header .navegacion a:hover {
     font-size: 0.95rem;
     border-radius: 30px;
   }
-  /* QUIENES SOMOS */
+  /*QUIENES SOMOS*/
   .section-quienes-somos {
     padding: 60px 40px;
   }
@@ -960,9 +958,9 @@ header .navegacion a:hover {
     max-width: 500px;
     border-radius: 10px;
   }
-  /* FOOTER */
+  /*FOOTER*/
   footer {
-    padding: 10px 40px;
+    padding: 28px 40px;
     background: #0b2a5b;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
